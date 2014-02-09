@@ -1,0 +1,26 @@
+<div id="listsDiv"></div>
+
+ <script>
+ var listsDiv = document.getElementById('listsDiv');
+ FB.getLoginStatus(function(response) {
+ if (response.status != 'connected') {
+ listsDiv.innerHTML = '<em>You are not connected</em>';
+ return;
+ }
+
+
+ });
+
+ var perms = function(){
+ FB.api('/me/friends', function(result) {
+
+ var markup = '';
+ var lists = result.data;
+ for(var i in lists){
+   markup += lists[i].name +'\t('+lists[i].id+')<br />';
+ }
+ listsDiv .innerHTML = markup;
+ });
+ }
+ FB.login(perms, { scope: 'read_friendlists' });
+ </script>
