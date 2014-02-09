@@ -1,0 +1,34 @@
+{
+  "name": "BackSafe",
+  "version": "0.0.0",
+  "description": "an app that helps make sure you get back safe",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thirab/HerokuApp"
+  },
+  "keywords": [
+    "safety",
+    "social",
+    "facebook",
+    "application",
+    "app",
+    "node.js",
+    "heroku"
+  ],
+  "author": "We-Hack Team: Tai-Lan Hirabayashi",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/thirab/HerokuApp/issues"
+  },
+  "dependencies": {
+    "express": "~3.4.8",
+    "logfmt": "~0.20.0",
+    "pg": "~2.11.1",
+    "bower": "~1.2.8",
+    "twitter-bootstrap-node": "~0.1.2"
+  }
+}
